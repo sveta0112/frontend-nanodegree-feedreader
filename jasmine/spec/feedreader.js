@@ -65,7 +65,7 @@ $(function() {
     /* Test suite named "The menu" */
     describe('The menu', function() {
         /* It ensures the menu element is
-         * hidden by default. 
+         * hidden by default.
          */
         it('hides menu by default', function() {
             //creating a variable hidden to capture <body> tag w/class menu-hidden (default status is true)
@@ -75,7 +75,7 @@ $(function() {
         });
 
         /*  It ensures the menu changes
-         * visibility when the menu icon is clicked. 
+         * visibility when the menu icon is clicked.
          * Should have two expectations: does the menu display when
          * clicked and does it hide when clicked again.
          */
@@ -84,17 +84,17 @@ $(function() {
             let menuButton = document.querySelector('a.menu-icon-link');
             //simulating click
             menuButton.click();
-            //testing after simulation-click that <body> tag is false 
+            //testing after simulation-click that <body> tag is false
             expect(document.body.classList.contains('menu-hidden')).toBeFalsy();
             //simulating click again
             menuButton.click();
-            //testing after simulation-click that <body> tag is true 
+            //testing after simulation-click that <body> tag is true
             expect(document.body.classList.contains('menu-hidden')).toBeTruthy();
         });
 
     });
 
-    
+
     /* Test suite named "Initial Entries" */
     describe('Initial Entries', function() {
         /* It ensures when the loadFeed
@@ -118,7 +118,7 @@ $(function() {
             done();
         });
     });
-        
+
 
     /* Test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
